@@ -1,0 +1,12 @@
+pytest==4.6.3
+pytest-cov==2.7.1
+Flask==1.0.3
+Flask-Cors==3.0.8
+Flask-RESTful==0.3.7
+python-decouple==3.1
+flask-compress==1.4.0
+flask-sqlalchemy==2.4.0
+alembic==1.0.10
+marshmallow==3.0.0rc7
+pymongo==3.8.0
+dnspython==1.16.0
