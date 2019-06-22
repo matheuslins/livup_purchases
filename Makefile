@@ -30,3 +30,15 @@ clean:
 	@echo "---- Cleaning up .pyc files ----"
 	@find . -name '*.pyc' -delete
 	@echo "---- Cleaned ----"
+
+.PHONY: revision
+revision:
+	alembic revision --autogenerate;
+
+.PHONY: upgrade
+upgrade:
+	alembic upgrade head
+
+.PHONY: downgrade
+downgrade:
+	alembic downgrade head
