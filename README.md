@@ -17,7 +17,7 @@ from the customers and make predictive models for a decision making.
 Create a `.env` file in root of the project:
 
 ````.env
- THERE IS A FILE CALLED '.env.example'
+ THERE IS A FILE CALLED '.env-example'
  WHERE SHOW ALL NECESSARY ENVIRONMENTS VARIABLES TO THIS PROJECT
 ````
 
@@ -37,17 +37,17 @@ The service is running in: http://localhost:7777/
 
 - Insert data in database
 
-````json
+````
 Method: POST
-Endpoint: http://localhost:7777/insert
+Endpoint: /insert
 Response: 'ok'
 Success Status code: 200 
 ````
 
 - Show Purchases
-````python
+````
 Method: GET
-Endpoint: http://localhost:7777/purchases
+Endpoint: /purchases
 Response: [
     {
         "amount": 34.8,
@@ -81,9 +81,9 @@ Success Status code: 200
 ````
 
 - Show user purchases
-````python
+````
 Method: GET
-Endpoint: http://localhost:7777/purchases?user_id=58febd18b22f83103aa218af
+Endpoint: /purchases?user_id=58febd18b22f83103aa218af
 Response: [
     {
         "amount": 34.8,
