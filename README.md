@@ -130,7 +130,7 @@ make test
 ````make
 make cov
 ````
-[LivUp Purchases Coverage](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/cov.png)
+![LivUp Purchases Coverage](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/cov.png)
 
 #### Production Environment
 
