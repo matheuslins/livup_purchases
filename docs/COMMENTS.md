@@ -17,7 +17,7 @@ and transform it in relational data saving in a relational database - PostgreSQl
 This is a job script which runs on a scheduled basis.
 This job could run as a celery task inside an Aws container or an RunDeck job.
 
-With this strategic is easier to scalability. We can scale according to the amount of data that will be injected.
+With this strategy is easier to scalability. We can scale according to the amount of data that will be injected.
 For this reason I choose this architecture.
 
 #### Liv UP Purchases
@@ -31,7 +31,7 @@ This is a Rest API which show the purchases.
 ```
 
 The endpoint will be transfer the data from one database to another one.
-With this strategic, it is also necessary have a job scheduled that will insert the data.
+With this strategy, it is also necessary have a job scheduled that will insert the data.
 
 ```
 2 - /purchases
