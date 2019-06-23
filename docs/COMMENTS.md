@@ -41,7 +41,7 @@ Consult the Postgres database and show all purchases
 
 
 ```
-3 - /purchases
+3 - /purchases?user_id=58febd18b22f83103aa218af
 ```
 
 Consult the Postgres database and show all purchases from a specific user
