@@ -12,17 +12,17 @@ and transform it in relational data saving in a relational database - PostgreSQl
 
 #### [Liv UP sales](https://github.com/matheuslins/livup_sales)
 
-![LivUp Sales Diagram](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/sales.jpg)
+![LivUp Sales Diagram](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/sales.png)
 
 This is a job script which runs on a scheduled basis.
 This job could run as a celery task inside an Aws container or an RunDeck job.
 
-With this strategy is easier to scalability. We can scale according to the amount of data that will be injected.
+With this strategic is easier to scalability. We can scale according to the amount of data that will be injected.
 For this reason I choose this architecture.
 
 #### Liv UP Purchases
 
-![LivUp Purchases Diagram](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/purchases.jpg)
+![LivUp Purchases Diagram](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/purchases.png)
 
 This is a Rest API which show the purchases.
 
@@ -31,7 +31,7 @@ This is a Rest API which show the purchases.
 ```
 
 The endpoint will be transfer the data from one database to another one.
-With this strategy, it is also necessary have a job scheduled that will insert the data.
+With this strategic, it is also necessary have a job scheduled that will insert the data.
 
 ```
 2 - /purchases
@@ -41,7 +41,7 @@ Consult the Postgres database and show all purchases
 
 
 ```
-3 - /purchases?user_id=58febd18b22f83103aa218af
+3 - /purchases
 ```
 
 Consult the Postgres database and show all purchases from a specific user
