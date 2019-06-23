@@ -33,7 +33,7 @@ Create a `.env` file in root of the project:
 ````python
 make run
 ````
-The service is running in: http://localhost:7777/
+The service is running in: http://localhost:7777
 
 - Insert data in database
 
