@@ -1,16 +1,26 @@
-# LivUp Purchases
+# Liv Up Purchases
 
 ### About
 
-This is a API which you can see the purchase summary from a LivUp customers.
+This is a API which you can see the purchase summary from a Liv Up customers.
 With this service it's possible monitor the average ticket sizes
 from the customers and make predictive models for a decision making.
+
+#### Technologies Used
+
+- Python 3.7
+- Flask
+- ORM (SQLAlchemy)
+- PostgreSQL (psycopg2)
+- MongoDB
+- Schema Validator (Marshmallow)
+- Rest Standard
+- Heroku
 
 #### Requirements
 
 - Pip
 - Virtual Environment (virtualenv)
-- Postgres SQL (psycopg2)
 
 #### Environment vars
 
