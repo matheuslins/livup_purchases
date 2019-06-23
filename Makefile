@@ -20,11 +20,7 @@ setup_dev:
 
 run:
 	@echo "---- Running Application ----"
-	@PYTHONPATH="${PYTHONPATH}" gunicorn -c ./src/gunicorn.py src.app:app
-
-run_dev:
-	@echo "---- Running Application ----"
-	@PYTHONPATH="${PYTHONPATH}" FLASK_ENV=development python ./src/app.py
+	@PYTHONPATH="${PYTHONPATH}" python ./src/main.py
 
 clean:
 	@echo "---- Cleaning up .pyc files ----"
@@ -33,12 +29,12 @@ clean:
 
 .PHONY: revision
 revision:
-	alembic revision --autogenerate;
+	@PYTHONPATH="${PYTHONPATH}" alembic revision --autogenerate;
 
 .PHONY: upgrade
 upgrade:
-	alembic upgrade head
+	@PYTHONPATH="${PYTHONPATH}" alembic upgrade head
 
 .PHONY: downgrade
 downgrade:
-	alembic downgrade head
+	@PYTHONPATH="${PYTHONPATH}" alembic downgrade head
