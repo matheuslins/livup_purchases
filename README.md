@@ -30,7 +30,7 @@ Create a `.env` file in root of the project:
 ### Running
 
 - Run API
-````python
+````make
 make run
 ````
 The service is running in: http://localhost:7777
@@ -107,6 +107,20 @@ Success Status code: 200
 
 **Note**: In case hasn't data in database, the API returns 204 as status code
 
+
+- Tests
+
+````make
+make test
+````
+
+
+- Coverage
+
+````make
+make cov
+````
+[LivUp Purchases Coverage](https://github.com/matheuslins/livup_purchases/blob/master/docs/img/cov.png)
 
 #### Production Environment
 
